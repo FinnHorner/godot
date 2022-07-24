@@ -34,7 +34,16 @@ func get_input():
 
 func _physics_process(delta):
 	get_input()
-	
+	if velocity.x == Vector2.ZERO:
+		player_state = state.IDLE
+	elif velocity.x != 0 and Input.is_action_just_pressed("jump") and is_on_floor():
+		player_state = state.JUMP
+	elif velocity.x != 0:
+		player_state = state.RUNNING
+		
+	if not is_on_floor():
+		if velocity.x < 0:
+			state.JUMP
 	
 	
 	
