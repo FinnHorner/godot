@@ -14,7 +14,7 @@ func _process(delta):
 			target = null
 			zoomed = false
 		else:
-			target = owner.get_node("Player")
+			target = owner.get_node("player")
 			zoomed = true
 	
 	if zoomed:
