@@ -1,14 +1,15 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Sprites/herochar sprites(new)/herochar_spritesheet(new).png" type="Texture" id=1]
-[ext_resource path="res://Player.gd" type="Script" id=2]
-[ext_resource path="res://jump.tres" type="Animation" id=3]
-[ext_resource path="res://pushing.tres" type="Animation" id=4]
-[ext_resource path="res://idle.tres" type="Animation" id=5]
-[ext_resource path="res://running.tres" type="Animation" id=6]
+[ext_resource path="res://scenes/Player.gd" type="Script" id=2]
+[ext_resource path="res://scenes/jump.tres" type="Animation" id=3]
+[ext_resource path="res://scenes/pushing.tres" type="Animation" id=4]
+[ext_resource path="res://scenes/idle.tres" type="Animation" id=5]
+[ext_resource path="res://scenes/running.tres" type="Animation" id=6]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 5.5, 7 )
+[sub_resource type="CapsuleShape2D" id=6]
+radius = 4.5
+height = 5.0
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -80,7 +81,7 @@ script = ExtResource( 2 )
 
 [node name="body colider" type="CollisionShape2D" parent="."]
 position = Vector2( -0.5, 1 )
-shape = SubResource( 1 )
+shape = SubResource( 6 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
