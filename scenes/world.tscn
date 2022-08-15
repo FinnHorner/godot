@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/DoorAndButton.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/SwingingTrap.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sprites/tiles and background_foreground (new)/tileset.png" type="Texture" id=5]
 [ext_resource path="res://scenes/Camera2D.gd" type="Script" id=6]
+[ext_resource path="res://SpinningBlade.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 300, 19 )
@@ -262,4 +263,11 @@ position = Vector2( -402, -170 )
 position = Vector2( -438, -208 )
 rotation = 3.14159
 
+[node name="SpinningBlade" parent="." instance=ExtResource( 7 )]
+position = Vector2( -765, -14 )
+
+[node name="Sprite" parent="SpinningBlade/Path2D/PathFollow2D" index="0"]
+frame = 0
+
 [editable path="DoorAndButton"]
+[editable path="SpinningBlade"]
