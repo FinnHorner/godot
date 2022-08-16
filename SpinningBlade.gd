@@ -1,4 +1,4 @@
-extends Path2D
+extends Node2D
 export (int) var follow_speed = 50
 
 func _ready():
