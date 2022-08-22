@@ -8,7 +8,12 @@ func _process(delta):
 	$Path2D/PathFollow2D.offset += follow_speed * delta
 
 
-
+func _on_Area2D_body_entered(body):
+	print(body)
+	if body.is_in_group("Player"):
+		print("Player Dead")
+		if GameStats.check_reset() == false:
+			body.global_position = GameStats.get_spawn().global_position
 
 
 
