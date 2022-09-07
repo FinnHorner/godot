@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Sprites/herochar sprites(new)/herochar_spritesheet(new).png" type="Texture" id=1]
 [ext_resource path="res://scenes/Player.gd" type="Script" id=2]
@@ -76,6 +76,10 @@ tracks/0/keys = {
 "values": [ 72, 73, 74 ]
 }
 
+[sub_resource type="CapsuleShape2D" id=7]
+radius = 5.0
+height = 4.0
+
 [node name="Player" type="KinematicBody2D" groups=["Player"]]
 script = ExtResource( 2 )
 
@@ -98,3 +102,10 @@ anims/jump = ExtResource( 3 )
 anims/pushing = ExtResource( 4 )
 anims/roll = SubResource( 5 )
 anims/running = ExtResource( 6 )
+
+[node name="DeathZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathZone"]
+shape = SubResource( 7 )
+
+[connection signal="area_entered" from="DeathZone" to="." method="_on_DeathZone_area_entered"]
