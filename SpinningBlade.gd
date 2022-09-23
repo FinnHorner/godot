@@ -1,5 +1,5 @@
 extends Node2D
-export (int) var follow_speed = 50
+export (int) var follow_speed = 175
 
 
 	
