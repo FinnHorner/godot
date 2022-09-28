@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/eglise_orgue.mp3-56d2a92658735e6d1785223b80659322.mp3str"
+
+[deps]
+
+source_file="res://Sounds/eglise_orgue.mp3"
+dest_files=[ "res://.import/eglise_orgue.mp3-56d2a92658735e6d1785223b80659322.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
