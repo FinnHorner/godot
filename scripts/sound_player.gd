@@ -27,5 +27,13 @@ func _ready():
 	add_child(music)
 	music.play()
 
-func _ready():
-	pass
+func play_sound_effect(sfx):
+	var sound = AudioStreamPlayer.new()
+	sound.stream = load(sound_effects[sfx])
+	add_child(sound)
+	yield(sound,"finished")
+	sound.queue_free()
+
+
+
+
