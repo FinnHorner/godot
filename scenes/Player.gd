@@ -33,6 +33,7 @@ func update_animation(anim):
 			$AnimationPlayer.play("idle")
 		state.JUMP:
 			$AnimationPlayer.play("jump")
+			SoundPlayer.play_sound_effect("jump")
 		state.PUSHING:
 			$AnimationPlayer.play("pushing")
 		state.RUNNING:
