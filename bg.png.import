@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Medieval_tiles_free_2.0.png-ceacbf2a1aaad54bafedcbc2b4f2a60a.stex"
+path="res://.import/bg.png-24bff804693ee063127ad100e04c5185.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Medieval_tiles_free_2.0.png"
-dest_files=[ "res://.import/Medieval_tiles_free_2.0.png-ceacbf2a1aaad54bafedcbc2b4f2a60a.stex" ]
+source_file="res://bg.png"
+dest_files=[ "res://.import/bg.png-24bff804693ee063127ad100e04c5185.stex" ]
 
 [params]
 
