@@ -428,7 +428,7 @@ script = ExtResource( 10 )
 position = Vector2( -44, -90 )
 
 [node name="player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1178, 387 )
+position = Vector2( 138, 117 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( -8, 18 )
@@ -483,6 +483,74 @@ position = Vector2( 1024, 336 )
 
 [node name="Area2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 453, 72 )
+rotation = 3.14159
+
+[node name="Area2D9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1256, 312 )
+rotation = 3.14159
+
+[node name="Area2D10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1305, 280 )
+rotation = 3.14159
+
+[node name="Area2D11" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1256, 248 )
+rotation = 3.14159
+
+[node name="Area2D12" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1304, 216 )
+rotation = 3.14159
+
+[node name="Area2D13" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1256, 184 )
+rotation = 3.14159
+
+[node name="Area2D14" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1304, 152 )
+rotation = 3.14159
+
+[node name="Area2D15" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1256, 120 )
+rotation = 3.14159
+
+[node name="Area2D16" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1304, 88 )
+rotation = 3.14159
+
+[node name="Area2D17" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1256, 56 )
+rotation = 3.14159
+
+[node name="Area2D18" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1304, 24 )
+rotation = 3.14159
+
+[node name="Area2D19" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1256, -8 )
+rotation = 3.14159
+
+[node name="Area2D20" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1304, -40 )
+rotation = 3.14159
+
+[node name="Area2D21" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1256, -72 )
+rotation = 3.14159
+
+[node name="Area2D22" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1304, -104 )
+rotation = 3.14159
+
+[node name="Area2D23" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1256, -136 )
+rotation = 3.14159
+
+[node name="Area2D24" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1256, -136 )
+rotation = 3.14159
+
+[node name="Area2D25" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1304, -168 )
 rotation = 3.14159
 
 [node name="Area2D5" parent="." instance=ExtResource( 3 )]
