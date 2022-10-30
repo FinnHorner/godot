@@ -60,6 +60,12 @@ func get_input():
 
 func _physics_process(delta):
 	get_input()
+	
+	if Input.is_action_just_pressed("esc"):
+		get_tree().quit()
+		
+		
+		
 	#print(is_on_floor())
 	if velocity == Vector2.ZERO:
 		player_state = state.IDLE
