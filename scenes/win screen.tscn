@@ -73,4 +73,5 @@ custom_fonts/font = SubResource( 2 )
 text = "Exit game"
 flat = true
 
+[connection signal="pressed" from="CenterContainer/VBoxContainer/menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/close game" to="." method="_on_close_game_pressed"]
