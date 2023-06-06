@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckq28dat4fvkb"]
+
+[ext_resource type="PackedScene" uid="uid://b4abxewc8tg7k" path="res://test_level.tscn" id="1_ufsgi"]
+[ext_resource type="PackedScene" uid="uid://dgfv2lcdtj0ve" path="res://player.tscn" id="2_m4j6e"]
+
+[node name="World" type="Node3D"]
+
+[node name="TestLevel" parent="." instance=ExtResource("1_ufsgi")]
+
+[node name="Player" parent="." instance=ExtResource("2_m4j6e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.07072, 0)
